@@ -47,3 +47,10 @@ resource "aws_instance" "foo" {
   ......
  
 }
+
+
+References: 
+* https://thenewstack.io/terraform-on-aws-multi-account-setup-and-other-advanced-tips/
+* https://www.culturefoundry.com/cultivate/technology/setting-up-dns-subdomain-delegation-with-terraform/
+* https://medium.com/@dalethestirling/managing-route53-cross-account-zone-associations-with-terraform-e1e45de8f3ea
+* https://www.terraform.io/docs/configuration/providers.html

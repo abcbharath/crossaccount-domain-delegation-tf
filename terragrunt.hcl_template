@@ -1,0 +1,10 @@
+remote_state {
+    backend = "s3"
+    config = {
+        bucket         = "${STATE_BUCKET}"
+        key            = "pathname/${TARGET_REGION}/${TARGET_ACC}/terraform.tfstate"
+        region         = "${TARGET_REGION}"
+        encrypt        = true
+        dynamodb_table = "${DYNDB_TBL}"
+    }
+}

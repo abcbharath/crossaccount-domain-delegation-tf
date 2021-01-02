@@ -38,11 +38,12 @@ To use an alternate provider configuration for a resource or data source, set it
 resource "aws_instance" "foo" {
 
   provider = aws.accountB
-
+  .....
 }
+
 resource "aws_instance" "foo" {
 
   provider = aws.accountA
-
-
+  ......
+ 
 }

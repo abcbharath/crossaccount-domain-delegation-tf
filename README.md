@@ -36,12 +36,13 @@ By default, resources use a default provider configuration (one without an alias
 To use an alternate provider configuration for a resource or data source, set its provider meta-argument to a <PROVIDER NAME>.<ALIAS> reference:
 
 resource "aws_instance" "foo" {
+
   provider = aws.accountB
 
-  # ...
 }
 resource "aws_instance" "foo" {
+
   provider = aws.accountA
 
-  # ...
+
 }
